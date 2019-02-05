@@ -1,0 +1,242 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+	padding: 0
+	margin: 0
+
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	background-color: #343642
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: $accent
+	color: #fff
+
+
+// Custom CSS
+
+.header
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	width: 100%
+	z-index: 200
+
+.header
+	background-color: #343642
+.main
+	width: 100%
+	height: 100%
+	position: relative
+	bottom: 0
+	z-index: 100
+
+	
+.button-group
+	text-align: center
+	padding: 35px 0
+
+
+
+
+.button-group__button
+	display: inline-block
+	text-align: center
+	color: #fff
+	border: 1px solid #fff
+	border-radius: 30px
+	font-size: 1.6em
+	padding: 7px 20px
+	margin: 0 10px
+	cursor: pointer
+
+.button-group__button--cany
+	background-color: $cany
+	border-color: $cany
+
+.button-group__button:hover
+	box-shadow: 0px 0px 28px -4px rgba(218,226,232,1)
+
+.button-group__button:active
+	opacity: 0.7
+
+.bg-mask
+	background: #343642
+	opacity: 0
+
+.main-bg-mask
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	z-index: 400
+
+.main-wrap-form
+	position: absolute
+	width: 650px
+	z-index: 500
+	left: 50%
+	margin-left: -325px
+	top: 50%
+	transform: translateY(-50%)
+
+.inner
+	width: 100%
+	height: 100%
+	border-radius: 4px
+	
+
+.control-btn-group
+	width: 100%
+
+.control-btn-group__button
+	color: #809191
+	background-color: #d2d8d8
+	width: 50%
+	float: left
+	text-align: center
+	padding: 20px 0
+	font-size: 1.5em
+	cursor: pointer
+
+.control-btn-group__button--active
+	color: #505260
+	background-color: #fff
+.form
+	width: 100%
+	padding: 17.5px 35px 35px 35px
+	background-color: #fff
+	clear: both
+	transform: translateY(-1px)
+	border-bottom-right-radius: 4px
+	border-bottom-left-radius: 4px
+
+.form-input
+	position: relative
+
+.form-input-text__input
+	outline: none
+	border: none
+	width: 100%
+	padding: 16px 20px 16px 50px
+	border: 1px solid #d2d8d8
+	border-radius: 4px
+	margin-top: 17.5px
+	margin-bottom: 17.5px
+	font-size: 1.3em
+
+.form-input-button__input
+	outline: none
+	border: none
+	width: 100%
+	padding: 16px 50px 16px 50px
+	border-radius: 4px
+	margin-top: 17.5px
+	margin-bottom: 17.5px
+	font-size: 1em
+	font-weight: bold
+	background-color: $cany
+	color: #fff
+	box-shadow: none
+
+.inner-input-button__input
+	outline: none
+	border: none
+	background: none
+	text-decoration: underline
+	width: 100%
+	margin-top: 17.5px
+	margin-bottom: 17.5px
+	font-size: 1em
+	color: #fff
+
+
+
+.form-input-checkbox
+	padding: 16px 0
+	
+
+.control-btn-group__button--left
+	border-top-left-radius: 4px
+.control-btn-group__button--right
+	border-top-right-radius: 4px
+
+.form-input-text__input__pass-hidden
+	display: inline-block
+	position: absolute
+	top: 50%
+	bottom: auto
+	transform: translateY(-50%)
+	right: 0
+	font-size: 1.2em
+	padding: 2px 15px
+	margin: 0
+	border-left: 1px solid #d2d8d8
+	cursor: pointer
+
+.active-tab
+	background-color: #fff
+
+span
+	color: $cany
+
+.description
+	text-align: center
+
+.error-block
+	color: red
+
+
+
+@import "media" // Всегда в конце
