@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>eWave-Form</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<header class="header" id="header">
+		<!-- <h1>Test project form authorisation and registration</h1> -->
+		<div class="button-group header-button-group">
+			<div class="button-group__button" id="header-sign-in">Sign In</div>
+			<div class="button-group__button button-group__button--cany" id="header-sign-up">Sign Up</div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="wrap-form main-wrap-form">
+
+			<!-- Sign In form -->
+			<div class="inner hidden form-1">
+				<div class="control-btn-group">
+					<div class="control-btn-group__button control-btn-group__button--left sign-in-tab-left">Sign In</div>
+					<div class="control-btn-group__button control-btn-group__button--right sign-in-tab-right">New account</div>
+				</div>
+				<form class="form">
+					<div class="form-input form-input-text">
+						<input type="text" class="form-input-text__input email" placeholder="E-mail" id="old-login">
+					</div>
+					<div class="form-input form-input-text">
+						<input type="password" class="form-input-text__input" placeholder="Password" id="old-pass">
+						<p class="form-input-text__input__pass-hidden hide-button">Show</p>
+					</div>
+					<div class="form-input form-input-checkbox">
+						<input type="checkbox" class="form-input-checkbox__input">
+						<label>Remember me</label>
+					</div>
+					<div>
+						<p class="error-block"></p>
+					</div>
+					<div class="form-input form-input-button">
+						<input type="button" class="form-input-button__input" value="Login" id="log-in">
+					</div>
+				</form>
+				<div class="inner-input inner-input-button">
+					<input type="button" class="inner-input-button__input" id="forgot-pass" value="Forgot your password?">
+				</div>
+			</div><!--  inner end  -->
+
+			<!-- Sign Up form -->
+			<div class="inner hidden form-2">
+				<div class="control-btn-group">
+					<div class="control-btn-group__button control-btn-group__button--left sign-in-tab-left">Sign In</div>
+					<div class="control-btn-group__button control-btn-group__button--right sign-in-tab-right">New account</div>
+				</div>
+				<form class="form">
+					<div class="form-input form-input-text">
+						<input type="text" class="form-input-text__input" placeholder="Username" id="new-username">
+					</div>
+					<div class="form-input form-input-text">
+						<input type="text" class="form-input-text__input email" placeholder="E-mail" id="new-email">
+					</div>
+					<div class="form-input form-input-text">
+						<input type="password" class="form-input-text__input" placeholder="Password"  id="new-pass">
+						<p class="form-input-text__input__pass-hidden hide-button">Show</p>
+					</div>
+					<div class="form-input form-input-checkbox">
+						<input type="checkbox" class="form-input-checkbox__input" id="check-aggry">
+						<label>I agree to the <span>Terms</span></label>
+					</div>
+					<div>
+						<p class="error-block"></p>
+					</div>
+					<div class="form-input form-input-button">
+						<input type="button" class="form-input-button__input" value="Create account" id="log-up">
+					</div>
+				</form>
+			</div><!--  inner end  -->
+
+			<!-- Forgot password form -->
+			<div class="inner hidden form-3">
+				<div class="control-btn-group">
+					<div class="control-btn-group__button control-btn-group__button--left sign-in-tab-left">Sign In</div>
+					<div class="control-btn-group__button control-btn-group__button--right sign-in-tab-right">New account</div>
+				</div>
+				<form class="form">
+					<div class="description form-description">
+						<p>Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+					</div>
+					<div class="form-input form-input-text">
+						<input type="text" class="form-input-text__input" placeholder="E-mail" id="email-prompt">
+					</div>
+					<div>
+						<p class="error-block"></p>
+					</div>
+					<div class="form-input form-input-button">
+						<input type="button" class="form-input-button__input" value="Reset password"  id="prompt-pass">
+					</div>
+				</form>
+				<div class="inner-input inner-input-button" id="back-login">
+					<input type="button" class="inner-input-button__input" value="Back to log-in">
+				</div>
+			</div><!--  inner end  -->
+		</div>
+
+		<div class="bg-mask main-bg-mask hidden" id="bg-mask"></div>
+	</main>
+	<footer class="footer"></footer>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>
